@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily">google-sans-text</string>
-    <string name="config_bodyFontFamilyMedium">google-sans-text-medium</string>
-
-    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily">google-sans</string>
-    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
-    <string name="config_headlineFontFeatureSettings">ss03</string>
-
-    <!-- Name of the font family to use in the default lockscreen clock -->
-    <string name="config_clockFontFamily" translatable="false">google-sans-clock</string>
-
-    <string-array name="config_locationProviderPackageNames" translatable="false">
-        <!-- The Google provider -->
-        <item>com.google.android.gms</item>
-        <!-- The standard AOSP fused location provider -->
-        <item>com.android.location.fused</item>
-    </string-array>
-
     <string-array name="config_locationExtraPackageNames" translatable="false">
         <!-- CneApp -->
         <item>com.qualcomm.qti.cne</item>
@@ -27,30 +7,12 @@
         <item>com.shannon.imsservice</item>
     </string-array>
 
-    <!-- Set icon mask to circle -->
-    <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
-
-    <!-- Whether action menu items should be displayed in ALLCAPS or not.
-         Defaults to true. If this is not appropriate for specific locales
-         it should be disabled in that locale's resources. -->
-    <bool name="config_buttonTextAllCaps">false</bool>
-
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
-    <!-- The package name for the default wellbeing app.
-         This package must be trusted, as it has the permissions to control other applications
-         on the device.
-         Example: "com.android.wellbeing"
-     -->
-    <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
-
-   <!-- Make the gesture options show up -->
-   <bool name="config_swipe_up_gesture_setting_available">true</bool>
-   
     <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
          screenshot chord -->
     <integer name="config_screenshotChordKeyTimeout">1</integer>
@@ -73,9 +35,6 @@
          1: 2 button mode (back, home buttons + swipe up for overview)
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
-
-    <!-- Whether or not to add a "people" notifications section -->
-    <bool name="config_usePeopleFiltering">true</bool>
 
     <!-- List of packages that can use the Conversation space for their category messages
     notifications until they target R -->
@@ -119,14 +78,6 @@
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
-    <!-- Whether this device is supporting the microphone toggle -->
-    <bool name="config_supportsMicToggle">true</bool>
-    <!-- Whether this device is supporting the camera toggle -->
-    <bool name="config_supportsCamToggle">true</bool>
-
-    <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">64</integer>
-
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">false</bool>
 
@@ -137,9 +88,6 @@
          2 - MODE_NIGHT_YES
     -->
     <integer name="config_defaultNightMode">0</integer>
-
-    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
-    <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
     <!-- Fingerprint from a certified device -->
     <string name="config_certifiedFingerprint" translatable="false">google/husky/husky:14/UD1A.230803.041/10808477:user/release-keys</string>
