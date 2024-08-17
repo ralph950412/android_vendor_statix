@@ -19,5 +19,7 @@ load("//build/make/core/release_config.scl", "value")
 values = [
     # keep-sorted start numeric=yes
     value("RELEASE_ACONFIG_VALUE_SETS", "aconfig_value_set-statix-ap2a"),
+    value("RELEASE_DEFAULT_MODULE_BUILD_FROM_SOURCE", ""),
+    value("RELEASE_APEX_BOOT_JARS_PREBUILT_EXCLUDED_LIST", "com.android.mediaprovider:framework-pdf com.android.mediaprovider:framework-pdf-v"),
     # keep-sorted end
 ]

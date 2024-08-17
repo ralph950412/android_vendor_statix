@@ -23,6 +23,8 @@ else
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif
 
+$(call inherit-product, vendor/statix/config/apex.mk)
+
 # Enable certified props overlay
 PRODUCT_COPY_FILES += \
     vendor/statix/prebuilt/etc/overlay/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
