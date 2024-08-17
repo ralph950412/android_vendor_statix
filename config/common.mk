@@ -15,12 +15,14 @@ endif
 # Define some properties for GMS
 ifneq ($(TARGET_DOES_NOT_USE_GAPPS), true)
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
-# Anything including updatable_apex.mk should have done so by now.
-ifeq ($(TARGET_FLATTEN_APEX), false)
+
+# Partner modules
+ifneq ($(TARGET_FLATTEN_APEX), true)
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
 else
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif
+
 # Enable certified props overlay
 PRODUCT_COPY_FILES += \
     vendor/statix/prebuilt/etc/overlay/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
